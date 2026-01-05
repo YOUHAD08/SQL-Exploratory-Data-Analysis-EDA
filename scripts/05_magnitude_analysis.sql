@@ -1,3 +1,26 @@
+
+/*
+===============================================================================
+Magnitude Analysis
+===============================================================================
+Purpose:
+    - To analyze data distribution and magnitude across different dimensions
+    - To understand segmentation patterns in customers, products, and sales
+    - To identify top performers and concentration patterns by category
+    - To calculate aggregated metrics using dimensional groupings
+
+SQL Functions Used:
+    - COUNT / SUM / AVG
+    - GROUP BY
+    - ORDER BY
+    - LEFT JOIN
+
+Tables Used:
+    - gold.dim_customers
+    - gold.dim_products
+    - gold.fact_sales
+===============================================================================
+*/
 USE DataWarehouse
 
 -- Total Customers By Countries
