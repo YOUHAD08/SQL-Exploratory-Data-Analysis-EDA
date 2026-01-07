@@ -1,6 +1,30 @@
 USE DataWarehouse
 GO
+/*
+===============================================================================
+Customer Analytics Report View
+===============================================================================
+Purpose:
+    - Reusable analytical view for customer intelligence and segmentation
+    - Consolidates customer metrics, behaviors, and lifecycle analysis
+    - Supports marketing, sales, and retention strategies
 
+Metrics Included:
+    - Transaction: orders, sales, quantity, products purchased
+    - Lifecycle: first/last order, lifespan, recency (months)
+    - KPIs: average order value, average monthly spend
+    - Segmentation: age groups, customer tiers (VIP/Regular/New)
+
+SQL Functions Used:
+    - CTEs, CONCAT(), DATEDIFF(), GETDATE()
+    - Aggregates: COUNT, SUM, MIN, MAX, ROUND()
+    - CASE statements for segmentation
+
+Tables Referenced:
+    - gold.fact_sales
+    - gold.dim_customers
+===============================================================================
+*/
 
 -- =============================================================================
 -- Create Report: gold.report_customers
